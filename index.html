@@ -15,22 +15,39 @@
 <body>
     <h1 style="color:rgb(30,30,30)";>Hello , Do You Want To Get Access ?</h1>
     <p id="titlebottom">
-        There are 8 pictures in this page. Find and decrypt!
+        There are 4 pictures in this page. Decrypt it!
     </p>
     <div id="enter">
         <div>TWO PICTURES MERGE INTO ONE.</div>
         <div>THE ANSWER IS SO CLOSE.</div>
         <div>
             <input type="Verification code" placeholder="Enter what you have find">
-            <input type="submit" value="SUBMIT">
+            <button id="bt">SUBMIT</button>
         </div>
     </div>
     <div id="pics">
-        <div>TWO PICTURES MERGE INTO ONE.</div>
-        <div>THE ANSWER IS SO CLOSE.</div>
-        <img src="https://raw.githubusercontent.com/ccl-private/ccl-private.github.io/master/src/what%3F7.jpg"/>
+        <div>YES, THEY ARE SOME PICTURES AFTER FOURIER TRANSFORM.</div>
+        <div>FIGURE OUT WHAT THEY WERE LOOK LIKE IS THE KEY.</div>
+        <table style="margin:auto"><tr>
+            <td><img src="https://raw.githubusercontent.com/ccl-private/ccl-private.github.io/master/src/what%3F7.jpg" border=0></td>
+            <td><img src="https://raw.githubusercontent.com/ccl-private/ccl-private.github.io/master/src/what%3F8.jpg" border=0></td>
+            <td><img src="https://raw.githubusercontent.com/ccl-private/ccl-private.github.io/master/src/what%3F9.jpg" border=0></td>
+            <td><img src="https://raw.githubusercontent.com/ccl-private/ccl-private.github.io/master/src/what%3F13.jpg" border=0></td>
+        </tr></table>
     </div>
     <img src="https://raw.githubusercontent.com/ccl-private/ccl-private.github.io/master/src/debian2.png"/>
+    
+    <p id="email"; style="color:rgb(0,0,0)";>CONTACT:chenchunlei@live.cn</p>
+    
+    <script>
+        var colors = ['rgb(20,0,0)','rgb(40,0,0)', 'rgb(60,0,0)', 'rgb(80,0,0)', 'rgb(100,0,0)', 'rgb(120,0,0)', 'rgb(140,0,0)'], index = -1;
+        var dv = document.getElementById('email'), bt = document.getElementById('bt');
+        bt.onclick = function () {
+            index++;
+            if (index >= colors.length) index = 0;
+            dv.style.color = colors[index];
+        }
+    </script>
 </body>
  
 </html>
